@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 export default class CreateProduct extends React.Component {
     constructor(props) {
@@ -38,9 +39,23 @@ export default class CreateProduct extends React.Component {
 
     createProduct() {
         console.log("SAVE***")
-        let prodType = this.state.productType;
-        let prodName = this.state.productName;
-        console.log(prodType);
+        let saveObj = {
+            prodType: this.state.productType,
+            prodName:this.state.productName,
+            prodSlug: this.state.productSlug,
+            prodSku: this.state.productSku,
+            manageStocks: this.state.manageStocks,
+            prodDescription: this.state.productDescription,
+            prodPrice:this.state.productPrice,
+            priceAmount:this.state.priceAmount,
+            priceCurrency:this.state.priceCurrency,
+            prodIncludesTax:this.state.prodIncludesTax,
+            status:this.state.status,
+            commodity:this.state.commodityType
+}
+        console.log(saveObj);
+
+        axios.post('http://localhost:5001/api/save/', saveObj);
     }
     onChangeProductType(e) {
         this.setState({
