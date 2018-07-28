@@ -40,18 +40,24 @@ export default class CreateProduct extends React.Component {
     createProduct() {
         console.log("SAVE***")
         let saveObj = {
-            prodType: this.state.productType,
-            prodName:this.state.productName,
-            prodSlug: this.state.productSlug,
-            prodSku: this.state.productSku,
-            manageStocks: this.state.manageStocks,
-            prodDescription: this.state.productDescription,
-            prodPrice:this.state.productPrice,
-            priceAmount:this.state.priceAmount,
-            priceCurrency:this.state.priceCurrency,
-            prodIncludesTax:this.state.prodIncludesTax,
+            type: this.state.productType,
+            name:this.state.productName,
+            slug: this.state.productSlug,
+            sku: this.state.productSku,
+            manage_stock: this.state.manageStocks,
+            description: this.state.productDescription,
+            price: [
+                {
+                    "amount": 5891,
+                    "currency": "USD",
+                    "includes_tax": true
+                }
+            ],
+            //priceAmount:this.state.priceAmount,
+            //priceCurrency:this.state.priceCurrency,
+            //prodIncludesTax:this.state.prodIncludesTax,
             status:this.state.status,
-            commodity:this.state.commodityType
+            commodity_type:this.state.commodityType
 }
         console.log(saveObj);
 
