@@ -61,7 +61,11 @@ export default class CreateProduct extends React.Component {
 }
         console.log(saveObj);
 
-        axios.post('http://localhost:5001/api/save/', saveObj);
+        return axios.post('http://localhost:5001/api/save/', saveObj).then(function(response){
+            console.log("response");
+            console.log(response);
+
+        });
     }
     onChangeProductType(e) {
         this.setState({
