@@ -1,0 +1,19 @@
+{
+  "name": "ecomreactredux",
+  "version": "1.0.0",
+  "description": "Sample Ecommerce Project built on React with Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KavithaVikas/sample-ecom-store.git"
+  },
+  "author": "kavitha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KavithaVikas/sample-ecom-store/issues"
+  },
+  "homepage": "https://github.com/KavithaVikas/sample-ecom-store#readme"
+}
