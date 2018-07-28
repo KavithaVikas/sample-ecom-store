@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CreateProduct from './createProduct.jsx';
 
-const Test = () => {
-    return(
-    <h1>Test React set up</h1>
-    )
+
+export default class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <CreateProduct/>
+            </div>
+        )
+    }
 }
 
-ReactDOM.render(<Test/>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
