@@ -14,18 +14,11 @@ class ProductList extends React.Component {
             checkedState: "",
             selectedCameraId: ""
         }
-        this.selectItemForCheckout = this.selectItemForCheckout.bind(this);
         this.setSelectedItems = this.setSelectedItems.bind(this);
         this.addToCart = this.addToCart.bind(this);
         this.removeFromCart = this.removeFromCart.bind(this);
     }
 
-    selectItemForCheckout() {
-
-        console.log("CheckBox");
-
-
-    }
 
     addToCart() {
         this.props.addToCart({
@@ -50,9 +43,9 @@ class ProductList extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log("recieve props");
+
         if (this.props.productList != nextProps.productList) {
-            console.log(nextProps.productList.data);
+
             this.setState({
                 productList: nextProps.productList.data
             })
@@ -63,7 +56,7 @@ class ProductList extends React.Component {
 
     }
 
-    removeFromCart(){
+    removeFromCart() {
         this.props.removeFromCart({
             checkBoxStatus: this.state.checkedState,
             selectedItemId: this.state.selectedCameraId
@@ -86,7 +79,7 @@ class ProductList extends React.Component {
                     {this.props.addedItemCart && this.props.addedItemCart.length > 0 &&
                         <div>
                             <h2>Checked out to cart</h2>
-                            <CardList cards={this.props.addedItemCart} setSelectedItems={this.setSelectedItems}/>
+                            <CardList cards={this.props.addedItemCart} setSelectedItems={this.setSelectedItems} />
                             <div>
                                 <button type="button" onClick={this.removeFromCart}> Remove from cart</button>
                             </div>

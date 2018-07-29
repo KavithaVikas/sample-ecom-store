@@ -13,8 +13,7 @@ import { connect } from 'react-redux';
     }
 
     selectItemForCheckout(e){
-        console.log("checkbox selected")
-        console.log(e.target.value);
+        
         this.setState({
             checkboxStatus:!this.state.checkboxStatus,
             selectedItem:e.target.value
@@ -40,7 +39,7 @@ import { connect } from 'react-redux';
 }
 
 function mapStateToProps(state) {
-    console.log(state.camera.cameraList);
+    
     return {
         productList: state.camera.cameraList
     }

@@ -9,15 +9,15 @@ export default function cameraReducer(state = initialState.productsObj, action) 
             })
         case "ADD_TO_CART":
             let selectedItem = action.payload;
-            console.log("selectedItem", selectedItem);
+            
             let backUP = Object.assign({}, state, state.cameraList);
             let data = backUP.cameraList.data;
-            let test = data.filter(element => selectedItem.selectedItemId == element.cameraId);
-            console.log("test", test);
+            let filteredData = data.filter(element => selectedItem.selectedItemId == element.cameraId);
+            
 
             return Object.assign({}, state, {
                 addedToCart: true,
-                addedItemCart: test
+                addedItemCart: filteredData
             })
         case 'REMOVE_FROM_CART':
             let selectedItemForRemove = action.payload;
