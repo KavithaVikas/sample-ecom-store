@@ -4,6 +4,10 @@ import Root from './root.js';
 import { Router, Route, browserHistory } from 'react-router';
 import CreateProduct from './createProduct';
 import ProductList from './productList';
+import {Provider} from 'react-redux';
+import configureStore from './store/configureStore';
+
+const store = configureStore();
 
 export default class App extends React.Component {
     render() {
@@ -18,4 +22,7 @@ export default class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+<Provider><App /></Provider>, 
+    
+    document.getElementById('root'));
