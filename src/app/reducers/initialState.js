@@ -2,7 +2,8 @@ export default {
     productsObj: {
         cameraList:{},
         addedToCart:false,
-        addedItemCart:[]
+        addedItemCart:[],
+        removedFromCart:false
 
     }
 }
