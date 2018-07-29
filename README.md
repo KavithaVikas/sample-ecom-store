@@ -17,6 +17,8 @@ ProductsList
 
 ProductList gives the list of products where you can checkout one product and that product gets added to Cart. It also as the ability to remove the product from cart.
 
+Note: Select only one item at a time
+
 Bringing the project to the current state involved-
 
 React Set Up with webpack module bundler.
@@ -33,6 +35,10 @@ Build checkout page
 Explore more on Moltin and understand its complete back end support.
 Proper validations.
 Proper state management.
+Multiple select and add to cart.
+
+
+
 
 
 
