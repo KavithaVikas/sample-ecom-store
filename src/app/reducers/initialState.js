@@ -1,6 +1,8 @@
 export default {
     productsObj: {
-        cameraList:{}
+        cameraList:{},
+        addedToCart:false,
+        addedItemCart:[]
 
     }
 }
