@@ -76,7 +76,7 @@ class ProductList extends React.Component {
             return (
                 <div>
                     <h2>List Of Drone Cameras</h2>
-                    {this.props.addedToCart && <h3>Product successfully added to cart</h3>}
+                    {this.props.addedToCart.length > 0 && <h3>Product successfully added to cart</h3>}
                     <div>
                         <CardList cards={data} setSelectedItems={this.setSelectedItems} />
                     </div>
