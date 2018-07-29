@@ -17,6 +17,7 @@ let root = '/api/';
 
 app.use(root + 'ping', require(`./controllers/pingController`));
 app.use(root + 'save', require(`./controllers/saveProductsController`));
+app.use(root + 'getProducts', require(`./controllers/getProductsController`))
 
 app.use(root, express.static('public'));
 module.exports = app;
