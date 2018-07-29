@@ -27,6 +27,14 @@ Redux Thunk middleware.
 Express framework .
 Bootstrap set up for styles.
 
+Was aspiring to do - 
+
+Build checkout page
+Explore more on Moltin and understand its complete back end support.
+Proper validations.
+Proper state management.
+
+
 
 
 
