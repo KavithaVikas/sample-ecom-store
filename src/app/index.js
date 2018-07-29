@@ -10,6 +10,7 @@ export default class App extends React.Component {
         return (
             
             <Router history={browserHistory}>
+                <Route path="/" component={Root}/>
                 <Route path="createProduct" component={CreateProduct}/>
                 <Route path="listProducts" component={ProductList}/>
             </Router>

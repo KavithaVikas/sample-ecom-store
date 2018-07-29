@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CreateProduct from './createProduct';
-import ProductList from './productList';
+import {Link} from 'react-router';
 
 
 export default class Root extends React.Component {
@@ -10,10 +9,10 @@ export default class Root extends React.Component {
             <div className="container">
                 <h2>Actions on the App</h2>
                 <div style={{ margin: 10 }}>
-                    <button type="button" className="btn btn-primary">CreateProduct</button>
+                    <Link to={"/createProduct"}>CreateProduct</Link>
                 </div>
                 <div style={{ margin: 10 }}>
-                    <button type="button" className="btn btn-primary">ProductList</button>
+                    <Link to={"/listProducts"} >ProductList</Link>
                 </div>
             </div>
         )
