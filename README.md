@@ -1,6 +1,6 @@
 # sample-ecom-store
 
-This repositry is for an assignment to examine please clone below repo:
+This repositry contains a UI for E-commerce store that integrates/mimics api from a commerce backend service Moltin
 
 repo https://github.com/KavithaVikas/sample-ecom-store/ 
 
@@ -10,13 +10,24 @@ For API - Run the file - node api/server.js - API is on port 5001
 
 After starting both UI and API Open Browser and open http://localhost:8080
 
-There you will find two routes
+There you will find two routes:
 
 AddProducts
 ProductsList
 
-Add Products I tried to do so that I can add the products using Moltin API Reference and list them in the products. But I failed as understaning Moltin API was taking some time.
+ProductList gives the list of products where you can checkout one product and that product gets added to Cart. It also as the ability to remove the product from cart.
 
-The curl operations worked i was getting token however when i tried to do from postman or code it started giving 415 status code which i solved by passing content type later i was getting 422 status code couldnt understand where it was going wrong better to have sample request contract but as time was less I moved on by mocking all the api contracts.
+Bringing the project to the current state involved-
+
+React Set Up with webpack module bundler.
+Redux set up with react for state management.
+React Router for navigation.
+API set up where we have wrapper class which uses axios to do all external calls .
+Redux Thunk middleware.
+Express framework .
+Bootstrap set up for styles.
+
+
+
 
 
