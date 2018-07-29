@@ -1,6 +1,6 @@
 export default {
-    cameraList: {
-        
+    productsObj: {
+        cameraList:{}
 
     }
 }
